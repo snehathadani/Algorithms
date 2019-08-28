@@ -23,4 +23,24 @@ function HasTable() {
     this.remove = function (key) {
         table[HashCode(key)] = undefined;
     };
+
+    this.print = function () {
+        for (var i = 0; i < table.length; ++i) { 
+            if (table[i] !== undefined) {
+        
+                console.log(i + ": " + table[i]); 
+            }
+        }
+    };
 }
+
+var hash = new HasTable();
+
+hash.put('Sneha', "Abc.gmail.com");
+hash.put('marie', "bumbleBee.gmail.com");
+console.log(hash.get('Sneha'));
+hash.put('Sneha', "mean.com");
+console.log(hash.get('Sneha'));
+hash.print();
+
+
