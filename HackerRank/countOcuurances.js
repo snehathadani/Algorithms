@@ -1,0 +1,1 @@
+/* Given an array of integers a and a set of queries of the form [l, r, x], your task is to calculate the number of occurrences of the number x in the inclusive subarray a[l..r], for each query. Return the sum of the answers for all queries as the result.*/
